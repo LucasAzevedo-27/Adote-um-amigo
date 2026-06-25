@@ -12,3 +12,7 @@ Aprender a versionar um projeto Web com Git e publicar o repositório no GitHub.
 - CSS
 - Git
 - GitHub
+
+## Autor
+
+Lucas de Azevedo Morais
