@@ -13,6 +13,6 @@ Aprender a versionar um projeto Web com Git e publicar o repositório no GitHub.
 - Git
 - GitHub
 
-## Autor
+## Autores
 
 Lucas de Azevedo Morais e Maria Luiza Araújo Costa
