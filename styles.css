@@ -1,17 +1,333 @@
+:root {
+    --roxo: #3d1f3f;
+    --roxo-claro: #57315a;
+    --creme: #f2ede1;
+    --salmao: #f0a58a;
+    --salmao-escuro: #e08d6f;
+    --verde: #93a37b;
+    --branco-suave: #faf8f2;
+}
+
 body {
-  margin: 0;
-  background-color: #f5f7fb;
-  color: #1f2937;
-  font-family: Arial, Helvetica, sans-serif;
-  line-height: 1.5;
+    background-color: var(--creme);
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #3a3a3a;
 }
 
-header,
-main {
-  width: min(92%, 60rem);
-  margin: 0 auto;
+h1,
+h2,
+h4,
+h5,
+.titulo-logo,
+.card-title {
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--roxo);
 }
 
-header {
-  padding: 3rem 0 1rem;
+.cabecalho {
+    background-color: var(--roxo);
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.titulo-logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.cabecalho .nav-link {
+    color: #f3e9f3;
+    font-weight: 500;
+}
+
+.cabecalho .nav-link:hover {
+    color: var(--salmao);
+}
+
+.botao-adotar {
+    background-color: var(--salmao);
+    color: var(--roxo);
+    font-weight: 600;
+    border-radius: 0.75rem;
+    padding: 0.5rem 1.25rem;
+}
+
+.botao-adotar:hover {
+    background-color: var(--salmao-escuro);
+    color: var(--roxo);
+}
+
+.banner {
+    background:
+        linear-gradient(90deg, rgba(242, 237, 225, 0.95) 25%, rgba(242, 237, 225, 0.55) 50%, rgba(242, 237, 225, 0) 75%),
+        url("imagens/banner.jpg") center / cover no-repeat;
+}
+
+.titulo-banner {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+.badge.tag-verde {
+    background-color: #d9e0cc;
+    color: #4b5b3a;
+    font-weight: 500;
+    margin-right: 0.25rem;
+    padding: 0.35em 0.6em;
+    border-radius: 0.5rem;
+}
+.badge.tag-salmao {
+    background-color: #f8dcd0;
+    color: #8a4a35;
+    font-weight: 500;
+    margin-right: 0.25rem;
+    padding: 0.35em 0.6em;
+    border-radius: 0.5rem;
+}
+
+.botao-conhecer {
+    background-color: var(--salmao);
+    color: var(--roxo);
+    font-weight: 600;
+    border-radius: 0.75rem;
+}
+
+.botao-conhecer:hover {
+    background-color: var(--salmao-escuro);
+    color: var(--roxo);
+}
+
+.estatisticas {
+    background-color: var(--branco-suave);
+    margin-top: -3rem;
+    position: relative;
+}
+
+.icone-estatistica,
+.icone-passo {
+    background-color: var(--verde);
+    color: #fff;
+    width: 56px;
+    height: 56px;
+    min-width: 56px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+.titulo-secao {
+    font-weight: bold;
+}
+
+.ver-todos:hover {
+    text-decoration: underline;
+}
+
+.card {
+    background-color: var(--branco-suave);
+    overflow: hidden;
+}
+
+.card-img-top {
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.card-text {
+    color: #6b6b6b;
+    font-size: 0.9rem;
+}
+
+.passo {
+    background-color: var(--branco-suave);
+}
+
+.passo h4 {
+    font-size: 1.15rem;
+}
+
+.numero-passo {
+    color: var(--roxo);
+    font-weight: bold;
+    margin-right: 0.25rem;
+}
+
+.faixa-ajuda {
+    background-color: var(--verde);
+    color: #fff;
+}
+
+.faixa-ajuda h2 {
+    color: #fff;
+    font-weight: bold;
+}
+
+.icone-ajuda {
+    background-color: var(--salmao);
+    color: var(--roxo);
+    width: 90px;
+    height: 90px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2.2rem;
+}
+
+.botao-ajudar {
+    background-color: var(--salmao);
+    color: var(--roxo);
+    font-weight: 600;
+    border-radius: 0.75rem;
+}
+
+.botao-ajudar:hover {
+    background-color: var(--salmao-escuro);
+    color: var(--roxo);
+}
+
+.rodape {
+    background-color: var(--roxo);
+    color: #e8dce8;
+}
+
+.rodape h2,
+.rodape h5 {
+    color: #fff;
+}
+
+.rodape a {
+    color: #e8dce8;
+    text-decoration: none;
+}
+
+.rodape a:hover {
+    color: var(--salmao);
+}
+
+.rodape li {
+    margin-bottom: 0.4rem;
+}
+
+@media (max-width:768px){
+
+.logo{
+flex-direction:column;
+gap:8px;
+}
+
+.logo h2{
+font-size:26px;
+text-align:center;
+}
+
+.logo img{
+height:75px;
+}
+
+nav ul{
+flex-direction:column;
+gap:12px;
+align-items:center;
+}
+
+.botao-adotar{
+width:220px;
+text-align:center;
+}
+
+.mudança{
+padding:35px 20px;
+}
+
+.mudança h1{
+font-size:36px;
+line-height:42px;
+text-align:center;
+}
+
+.mudança p{
+font-size:17px;
+line-height:28px;
+text-align:center;
+}
+
+.botao{
+display:flex;
+justify-content:center;
+}
+
+.estatisticas{
+padding:20px;
+}
+
+.item{
+width:100%;
+justify-content:center;
+text-align:center;
+flex-direction:column;
+}
+
+.item h3{
+font-size:32px;
+}
+
+.item p{
+max-width:100%;
+}
+
+.titulo h2{
+font-size:34px;
+text-align:center;
+}
+
+.cards{
+flex-direction:column;
+align-items:center;
+}
+
+.card-animais{
+width:100%;
+max-width:360px;
+}
+
+.passo{
+width:100%;
+}
+
+.ajudar-texto h2{
+font-size:30px;
+text-align:center;
+}
+
+.ajudar-texto p{
+font-size:17px;
+text-align:center;
+}
+
+.btn-ajudar{
+width:100%;
+justify-content:center;
+}
+
+.footer-container{
+flex-direction:column;
+text-align:center;
+}
+
+.footer-col{
+width:100%;
+}
+
+.footer-col h2{
+font-size:34px;
+}
+
 }
