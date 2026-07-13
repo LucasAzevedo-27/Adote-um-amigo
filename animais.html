@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Adote um Amigo - Conheça os Animais</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link rel="stylesheet" href="animais.css">
+</head>
+
+<body>
+    <header class="navbar navbar-expand-lg navbar-dark cabecalho py-3">
+        <div class="container">
+            <a class="navbar-brand d-flex align-items-center gap-2" href="inicio.html">
+                <img src="imagens/logo.png" class="logo" alt="Logo Adote um Amigo">
+                <span class="titulo-logo">Adote um Amigo</span>
+            </a>
+
+            <div id="menu">
+                <ul class="navbar-nav align-items-center gap-lg-4">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Conheça os animais</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#adresponsavel">Adoção responsável</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Como adotar</a>
+                    </li>
+                    <li class="nav-item ms-lg-3">
+                        <a href="#" class="btn botao-adotar">
+                            <i class="fa-solid fa-paw"></i>
+                            Quero adotar
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </header>
+    <section class="banner-animais">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <h1 class="titulo-banner">Encontre seu novo companheiro</h1>
+                    <p class="texto-banner">Cada animal aqui espera por uma chance de recomeçar ao seu lado. Adote com
+                        amor e responsabilidade.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container">
+        <div class="card shadow-lg border-0 rounded-4 filtro-card">
+            <div class="card-body">
+                <div class="row g-3 align-items-center" id="filtros">
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <button class="btn botao-filtro ativo w-100" data-especie="todos">
+                            <i class="fa-solid fa-paw me-2"></i>Todos
+                        </button>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <button class="btn botao-filtro w-100" data-especie="cao">
+                            <i class="fa-solid fa-dog me-2"></i>Cães
+                        </button>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <button class="btn botao-filtro w-100" data-especie="gato">
+                            <i class="fa-solid fa-cat me-2"></i>Gatos
+                        </button>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <select class="form-select" id="filtro-porte">
+                            <option value="todos">Porte</option>
+                            <option value="pequeno">Pequeno</option>
+                            <option value="medio">Médio</option>
+                            <option value="grande">Grande</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-6">
+                        <select class="form-select" id="filtro-idade">
+                            <option value="todos">Idade</option>
+                            <option value="filhote">Filhote</option>
+                            <option value="adulto">Adulto</option>
+                            <option value="idoso">Idoso</option>
+                        </select>
+                    </div>
+                    <div class="col-lg-2 col-md-4 col-12">
+                        <button class="btn botao-buscar w-100" id="btn-buscar">
+                            <i class="fa-solid fa-magnifying-glass me-2"></i>Conhecer
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container my-5">
+        <div class="row g-4" id="lista-pets">
+            <div class="col-lg-4" data-especie="cao" data-porte="medio" data-idade="adulto">
+                <a href="formulario-animais/mel.html" class="card pet-card h-100 text-decoration-none">
+                    <div class="row g-0 h-100">
+                        <div class="col-6">
+                            <img src="imagens/mel.jpg" class="img-fluid h-100 w-100 rounded-start object-fit-cover"
+                                alt="Mel">
+                        </div>
+                        <div class="col-6 p-3">
+                            <h2>Mel</h2>
+                            <p class="dados">3 anos • Porte médio</p>
+                            <span class="badge tag-verde">Dócil</span>
+                            <span class="badge tag-verde">Brincalhão</span>
+                            <p class="mt-3">Sociável, carinhosa e cheia de energia. Adora passeios e companhia.</p>
+                            <p class="status"><i class="fa-solid fa-circle-check"></i> Vacinada e castrada</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4" data-especie="gato" data-porte="pequeno" data-idade="adulto">
+                <a href="formulario-animais/luna.html" class="card pet-card h-100 text-decoration-none">
+                    <div class="row g-0 h-100">
+                        <div class="col-6">
+                            <img src="imagens/luna.jpg" class="img-fluid h-100 w-100 rounded-start object-fit-cover"
+                                alt="Luna">
+                        </div>
+                        <div class="col-6 p-3">
+                            <h2>Luna</h2>
+                            <p class="dados">1 ano • Fêmea</p>
+                            <span class="badge tag-salmao">Carinhosa</span>
+                            <span class="badge tag-salmao">Tranquila</span>
+                            <p class="mt-3">Doce e tranquila, perfeita para quem busca carinho e companhia.</p>
+                            <p class="status"><i class="fa-solid fa-circle-check"></i> Vacinada e castrada</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4" data-especie="cao" data-porte="medio" data-idade="adulto">
+                <a href="formulario-animais/thor.html" class="card pet-card h-100 text-decoration-none">
+                    <div class="row g-0 h-100">
+                        <div class="col-6">
+                            <img src="imagens/thor.jpg" class="img-fluid h-100 w-100 rounded-start object-fit-cover"
+                                alt="Thor">
+                        </div>
+                        <div class="col-6 p-3">
+                            <h2>Thor</h2>
+                            <p class="dados">2 anos • Porte médio</p>
+                            <span class="badge tag-verde">Protetor</span>
+                            <span class="badge tag-verde">Inteligente</span>
+                            <p class="mt-3">Leal, esperto e muito afetuoso. Se dá bem com outros cães.</p>
+                            <p class="status"><i class="fa-solid fa-circle-check"></i> Vacinado e castrado</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4" data-especie="gato" data-porte="pequeno" data-idade="adulto">
+                <a href="formulario-animais/zeca.html" class="card pet-card h-100 text-decoration-none">
+                    <div class="row g-0 h-100">
+                        <div class="col-6">
+                            <img src="imagens/zeca.jpg" class="img-fluid h-100 w-100 rounded-start object-fit-cover"
+                                alt="Zeca">
+                        </div>
+                        <div class="col-6 p-3">
+                            <h2>Zeca</h2>
+                            <p class="dados">2 anos • Macho</p>
+                            <span class="badge tag-salmao">Curioso</span>
+                            <span class="badge tag-salmao">Sociável</span>
+                            <p class="mt-3">Amigável e curioso, adora explorar e receber atenção.</p>
+                            <p class="status"><i class="fa-solid fa-circle-check"></i> Vacinado e castrado</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4" data-especie="cao" data-porte="medio" data-idade="adulto">
+                <a href="formulario-animais/bidu.html" class="card pet-card h-100 text-decoration-none">
+                    <div class="row g-0 h-100">
+                        <div class="col-6">
+                            <img src="imagens/bidu.jpg" class="img-fluid h-100 w-100 rounded-start object-fit-cover"
+                                alt="Bidu">
+                        </div>
+                        <div class="col-6 p-3">
+                            <h2>Bidu</h2>
+                            <p class="dados">4 anos • Porte médio</p>
+                            <span class="badge tag-verde">Companheiro</span>
+                            <span class="badge tag-verde">Calmo</span>
+                            <p class="mt-3">Calmo e carinhoso, ótimo para famílias e lares tranquilos.</p>
+                            <p class="status"><i class="fa-solid fa-circle-check"></i> Vacinado e castrado</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-lg-4" data-especie="gato" data-porte="pequeno" data-idade="filhote">
+                <a href="formulario-animais/amora.html" class="card pet-card h-100 text-decoration-none">
+                    <div class="row g-0 h-100">
+                        <div class="col-6">
+                            <img src="imagens/amora.jpg" class="img-fluid h-100 w-100 rounded-start object-fit-cover"
+                                alt="Amora">
+                        </div>
+                        <div class="col-6 p-3">
+                            <h2>Amora</h2>
+                            <p class="dados">8 meses • Fêmea</p>
+                            <span class="badge tag-salmao">Brincalhona</span>
+                            <span class="badge tag-salmao">Esperta</span>
+                            <p class="mt-3">Jovem e cheia de energia, adora brinquedos e carinho.</p>
+                            <p class="status"><i class="fa-solid fa-circle-check"></i> Vacinada e castrada</p>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-12 text-center py-5 d-none" id="sem-resultados">
+                <p class="mb-0"><i class="fa-solid fa-face-sad-tear me-2"></i>Nenhum animal encontrado com esses
+                    filtros.</p>
+            </div>
+        </div>
+    </section>
+    <section id=adresponsavel class="container mb-5">
+        <div class="card responsavel-card shadow-sm rounded-4 p-4 border-0">
+            <div class="row align-items-center gy-4">
+                <div class="col-lg-4 d-flex align-items-center">
+                    <div class="icone-responsavel me-3">
+                        <i class="fa-solid fa-shield-heart"></i>
+                    </div>
+                    <div>
+                        <h2 class="mb-1">Adoção responsável</h2>
+                        <p class="mb-0">Adotar é um compromisso de amor e cuidado por toda a vida do animal.</p>
+                    </div>
+                </div>
+                <div class="col-lg-8">
+                    <div class="row text-center g-3">
+                        <div class="col">
+                            <div class="passo-icon"><i class="fa-solid fa-house"></i></div>
+                            <h6 class="mt-2">Conheça</h6>
+                            <p>Visite e conheça o animal.</p>
+                        </div>
+                        <div class="col">
+                            <div class="passo-icon"><i class="fa-solid fa-comments"></i></div>
+                            <h6 class="mt-2">Converse</h6>
+                            <p>Fale com nossa equipe.</p>
+                        </div>
+                        <div class="col">
+                            <div class="passo-icon"><i class="fa-regular fa-heart"></i></div>
+                            <h6 class="mt-2">Encontre</h6>
+                            <p>Escolha o melhor para você.</p>
+                        </div>
+                        <div class="col">
+                            <div class="passo-icon"><i class="fa-solid fa-paw"></i></div>
+                            <h6 class="mt-2">Adote</h6>
+                            <p>Leve seu novo amigo para casa.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="rodape py-5">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-lg-4">
+                    <h2 class="mb-3">Adote um Amigo</h2>
+                    <p>Promovemos adoção responsável e o respeito à vida animal. Juntos, construímos um mundo mais justo
+                        e cheio de amor.</p>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Navegação</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Conheça os animais</a></li>
+                        <li><a href="#">Adoção responsável</a></li>
+                        <li><a href="#">Como adotar</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-md-4">
+                    <h5>Institucional</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Quem somos</a></li>
+                        <li><a href="#">Transparência</a></li>
+                        <li><a href="#">Perguntas frequentes</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4">
+                    <h5>Fale conosco</h5>
+                    <p><i class="fa-solid fa-phone me-2"></i>(11) 98765-4321</p>
+                    <p><i class="fa-solid fa-envelope me-2"></i>contato@adoteumamigo.org.br</p>
+                    <p><i class="fa-solid fa-location-dot me-2"></i>São Paulo - SP</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
