@@ -1,0 +1,331 @@
+:root {
+    --roxo: #3d1f3f;
+    --roxo-claro: #57315a;
+    --creme: #f2ede1;
+    --salmao: #f0a58a;
+    --salmao-escuro: #e08d6f;
+    --salmao-claro: #f8dcd0;
+    --verde: #93a37b;
+    --branco-suave: #faf8f2;
+}
+
+body {
+    background-color: var(--creme);
+    font-family: "Segoe UI", Arial, sans-serif;
+    color: #3a3a3a;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.titulo-logo {
+    font-family: Georgia, "Times New Roman", serif;
+    color: var(--roxo);
+}
+
+.cabecalho {
+    background-color: var(--roxo);
+}
+
+.logo {
+    width: 48px;
+    height: 48px;
+    object-fit: contain;
+}
+
+.titulo-logo {
+    font-size: 1.6rem;
+    font-weight: bold;
+    color: #fff;
+}
+
+.cabecalho .nav-link {
+    color: #f3e9f3;
+    font-weight: 500;
+}
+
+.cabecalho .nav-link:hover {
+    color: var(--salmao);
+}
+
+.botao-adotar {
+    background-color: var(--salmao);
+    color: var(--roxo);
+    font-weight: 600;
+    border-radius: 0.75rem;
+    padding: 0.5rem 1.25rem;
+}
+
+.botao-adotar:hover {
+    background-color: var(--salmao-escuro);
+    color: var(--roxo);
+}
+
+.botao-compartilhar {
+    background-color: #fff;
+    color: var(--roxo);
+    font-weight: 600;
+    border-radius: 0.75rem;
+    padding: 0.5rem 1.25rem;
+    border: 1px solid #e4dcc9;
+}
+
+.botao-compartilhar:hover {
+    background-color: var(--branco-suave);
+}
+
+.titulo-pagina {
+    font-size: 2.75rem;
+    font-weight: 700;
+}
+
+.coracao {
+    color: var(--salmao);
+    font-size: 1.75rem;
+}
+
+.info-rapida span {
+    color: var(--roxo);
+    font-weight: 500;
+}
+
+.info-rapida i {
+    color: var(--salmao-escuro);
+    margin-right: 0.35rem;
+}
+
+.foto-principal {
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.cartao-info {
+    background-color: #fff;
+}
+
+.cartao-info h2 i {
+    color: var(--salmao-escuro);
+    margin-right: 0.4rem;
+}
+
+.badge.tag-creme {
+    background-color: var(--salmao-claro);
+    color: var(--roxo);
+    font-weight: 500;
+    padding: 0.5em 0.85em;
+    border-radius: 999px;
+}
+
+.tabela-saude th {
+    color: var(--roxo);
+    font-weight: 600;
+    width: 45%;
+}
+
+.tabela-saude td {
+    color: #555;
+}
+
+.passo {
+    background-color: #fff;
+}
+
+.passo-icon {
+    width: 44px;
+    height: 44px;
+    background-color: var(--verde);
+    color: #fff;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+}
+
+.passo:nth-child(1) .passo-icon,
+.col-md-3:nth-child(4) .passo-icon {
+    background-color: var(--salmao);
+    color: var(--roxo);
+}
+
+.numero-passo {
+    color: var(--roxo);
+    font-weight: bold;
+    margin-right: 0.35rem;
+}
+
+.card-form {
+    background-color: #fff;
+    position: sticky;
+    top: 1rem;
+}
+
+.icone-form {
+    width: 40px;
+    height: 40px;
+    background-color: var(--salmao-claro);
+    color: var(--roxo);
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-form .form-label {
+    font-weight: 500;
+    color: var(--roxo);
+    margin-bottom: 0.15rem;
+}
+
+.card-form h3 {
+    color: var(--roxo);
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.form-control,
+.form-select {
+    border-radius: 0.6rem;
+    border: 1px solid #e4dcc9;
+    background-color: #fff;
+    font-size: 0.9rem;
+}
+
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--salmao);
+    box-shadow: 0 0 0 0.2rem rgba(240, 165, 138, 0.25);
+}
+
+.botao-enviar {
+    background-color: var(--salmao);
+    color: var(--roxo);
+    font-weight: 700;
+    border-radius: 0.75rem;
+    padding: 0.75rem 1rem;
+}
+
+.botao-enviar:hover {
+    background-color: var(--salmao-escuro);
+    color: var(--roxo);
+}
+
+.rodape {
+    background-color: var(--roxo);
+    color: #e8dce8;
+}
+
+.rodape h5, h2 {
+    color: #fff;
+}
+
+.rodape a {
+    color: #e8dce8;
+    text-decoration: none;
+}
+
+.rodape a:hover {
+    color: var(--salmao);
+}
+
+.rodape li {
+    margin-bottom: 0.4rem;
+}
+
+.rodape i {
+    margin-right: 0.4rem;
+    color: var(--salmao);
+}
+
+/* ================= TABLETS ================= */
+
+@media (max-width:992px){
+
+header{
+height:auto;
+padding:15px 0;
+}
+
+.container{
+flex-direction:column;
+gap:20px;
+height:auto;
+}
+
+.logo h2{
+font-size:32px;
+}
+
+.logo img{
+height:90px;
+}
+
+nav ul{
+gap:20px;
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.botao-adotar{
+padding:12px 20px;
+}
+
+.mudança{
+padding:50px 30px;
+height:auto;
+}
+
+.mudança-text{
+width:100%;
+}
+
+.mudança h1{
+font-size:48px;
+line-height:56px;
+}
+
+.mudança p{
+font-size:20px;
+line-height:30px;
+}
+
+.estatisticas{
+flex-wrap:wrap;
+gap:30px;
+}
+
+.cards{
+flex-wrap:wrap;
+justify-content:center;
+}
+
+.card-animais{
+width:300px;
+}
+
+.passos{
+flex-wrap:wrap;
+}
+
+.passo{
+width:45%;
+}
+
+.ajudar .container{
+flex-direction:column;
+text-align:center;
+}
+
+.footer-container{
+flex-wrap:wrap;
+gap:35px;
+}
+
+.footer-col{
+flex:0 0 calc(50% - 20px);
+}
+
+}
