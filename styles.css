@@ -218,6 +218,17 @@ h5,
 
 @media (max-width:768px){
 
+header{
+height:auto;
+padding:15px 0;
+}
+
+.container{
+flex-direction:column;
+gap:20px;
+height:auto;
+}
+
 .logo{
 flex-direction:column;
 gap:8px;

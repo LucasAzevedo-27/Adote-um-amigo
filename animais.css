@@ -217,6 +217,17 @@ h1, h2, h4, h5, h6, .titulo-logo {
 
 @media (max-width:768px){
 
+header{
+height:auto;
+padding:15px 0;
+}
+
+.container{
+flex-direction:column;
+gap:20px;
+height:auto;
+}
+
 .banner h1{
 font-size:2rem;
 }
