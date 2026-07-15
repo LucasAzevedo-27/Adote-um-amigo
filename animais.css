@@ -74,38 +74,7 @@ h1, h2, h4, h5, h6, .titulo-logo {
     background-color: var(--branco-suave);
     margin-top: -1rem;
 }
-.botao-filtro {
-    background-color: #fff;
-    color: var(--roxo);
-    border: 1px solid var(--creme);
-    border-radius: 0.75rem;
-    font-weight: 500;
-}
-.botao-filtro:hover {
-    background-color: var(--creme);
-    color: var(--roxo);
-}
-.botao-filtro.ativo {
-    background-color: var(--roxo);
-    color: #fff;
-    border-color: var(--roxo);
-}
-.form-select {
-    border-radius: 0.75rem;
-    border-color: var(--creme);
-    color: var(--roxo);
-    font-weight: 500;
-}
-.botao-buscar {
-    background-color: var(--salmao);
-    color: var(--roxo);
-    font-weight: 600;
-    border-radius: 0.75rem;
-}
-.botao-buscar:hover {
-    background-color: var(--salmao-escuro);
-    color: var(--roxo);
-}
+
 .pet-card {
     background-color: var(--branco-suave);
     border: none;
